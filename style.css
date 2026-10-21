@@ -907,6 +907,7 @@ section {
   padding-top: 14px;
   border-top: 1px solid var(--border-light);
   margin-top: auto;
+  box-sizing: border-box;
 }
 
 .product-craft-tag {
@@ -921,6 +922,8 @@ section {
   border-radius: var(--radius-full);
   border: 1px solid var(--border-accent);
   white-space: nowrap;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .product-craft-tag svg {
@@ -931,14 +934,15 @@ section {
 .product-actions {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .btn-order-direct {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 9px 18px;
-  font-size: 0.88rem;
+  padding: 8px 16px;
+  font-size: 0.86rem;
   font-weight: 700;
   border-radius: var(--radius-full);
   background-color: var(--whatsapp);
@@ -947,6 +951,8 @@ section {
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.28);
   transition: var(--transition);
   cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .btn-order-direct:hover {
@@ -1921,5 +1927,197 @@ footer.site-footer {
   
   .footer-top {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets and Mobile Landscape (<= 640px) */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .top-banner {
+    padding: 6px 12px;
+    font-size: 0.74rem;
+    line-height: 1.35;
+    gap: 6px;
+  }
+
+  .top-banner-link {
+    display: none; /* Hide redundant text link on mobile */
+  }
+
+  header.site-header {
+    background: #FAF6F0; /* Solid opaque background on mobile so scrolled content never bleeds through */
+  }
+
+  .nav-wrapper {
+    height: 64px;
+    padding: 0;
+  }
+
+  .brand-logo {
+    gap: 8px;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .brand-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+    white-space: nowrap;
+    line-height: 1.1;
+  }
+
+  .brand-sub {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  .header-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-wishlist {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btn-wishlist svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  #headerWhatsappBtn {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+  }
+
+  #headerWhatsappBtn .header-btn-text {
+    display: none;
+  }
+
+  #headerWhatsappBtn svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+
+  .hamburger-btn {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  nav.main-nav {
+    top: 64px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .floating-whatsapp {
+    width: 52px;
+    height: 52px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-whatsapp svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-logo img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .product-card {
+    border-radius: var(--radius-md);
+  }
+
+  .product-info {
+    padding: 16px 14px;
+  }
+
+  .product-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding-top: 12px;
+  }
+
+  .product-craft-tag {
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.74rem;
+    padding: 6px 10px;
+  }
+
+  .product-actions {
+    width: 100%;
+  }
+
+  .btn-order-direct {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.88rem;
+    box-sizing: border-box;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
   }
 }

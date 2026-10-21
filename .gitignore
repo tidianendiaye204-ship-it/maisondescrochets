@@ -1,0 +1,7 @@
+﻿node_modules/
+.tempmediaStorage/
+scratch/
+.system_generated/
+*.log
+.DS_Store
+Thumbs.db
