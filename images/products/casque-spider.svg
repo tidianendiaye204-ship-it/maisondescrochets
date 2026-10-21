@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHelmet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F6F0"/>
+      <stop offset="100%" stop-color="#EBE2D8"/>
+    </linearGradient>
+    <linearGradient id="creamCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7EE"/>
+      <stop offset="50%" stop-color="#EDE2D0"/>
+      <stop offset="100%" stop-color="#D7C6AF"/>
+    </linearGradient>
+    <linearGradient id="visorTint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282226"/>
+      <stop offset="100%" stop-color="#141113"/>
+    </linearGradient>
+    <filter id="helmetShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#201511" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgHelmet)"/>
+
+  <!-- Motorcycle Helmet with Handcrafted Spider Crochet Cover -->
+  <g transform="translate(200, 240)" filter="url(#helmetShadow)">
+    <!-- Helmet Main Outer Dome (Forme ronde du casque) -->
+    <path d="M-105,45 C-115,-70 -50,-140 0,-140 C50,-140 115,-70 105,45 C100,105 50,118 0,118 C-50,118 -100,105 -105,45 Z" fill="url(#creamCover)"/>
+
+    <!-- Helmet Dark Visor (Visière fumée apparente) -->
+    <path d="M-75,10 C-75,-25 -30,-45 0,-45 C30,-45 75,-25 75,10 C60,42 35,46 0,46 C-35,46 -60,42 -75,10 Z" fill="url(#visorTint)" stroke="#665B58" stroke-width="1.5"/>
+    <path d="M-55,-10 C-30,-28 10,-28 45,-10" stroke="#FFF" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+
+    <!-- Crochet Spiderweb Motif (Toile d'araignée noire crochetée sur le dessus) -->
+    <g stroke="#1F1815" stroke-width="2.2" stroke-linecap="round" fill="none">
+      <!-- Web Spokes (Rayons de la toile) -->
+      <line x1="0" y1="-140" x2="0" y2="-45"/>
+      <line x1="-80" y1="-95" x2="0" y2="-90"/>
+      <line x1="80" y1="-95" x2="0" y2="-90"/>
+      <line x1="-55" y1="-130" x2="0" y2="-90"/>
+      <line x1="55" y1="-130" x2="0" y2="-90"/>
+
+      <!-- Web Concentric Arcs (Arcs concentriques de la toile) -->
+      <path d="M-22,-115 Q0,-128 22,-115"/>
+      <path d="M-45,-105 Q0,-120 45,-105"/>
+      <path d="M-68,-90 Q0,-105 68,-90"/>
+      <path d="M-72,-68 Q0,-80 72,-68"/>
+    </g>
+
+    <!-- Black Handcrafted Spider in 3D Crochet (Araignée au sommet) -->
+    <g transform="translate(0, -90)">
+      <!-- Spider Abdomen -->
+      <ellipse cx="0" cy="5" rx="10" ry="14" fill="#1A1412"/>
+      <!-- Spider Cephalothorax -->
+      <circle cx="0" cy="-10" r="7.5" fill="#1A1412"/>
+      <!-- Spider Eyes (Red crochet beads) -->
+      <circle cx="-3" cy="-12" r="1.6" fill="#D94132"/>
+      <circle cx="3" cy="-12" r="1.6" fill="#D94132"/>
+
+      <!-- 8 Articulated Spider Legs (Pattes en mailles serrées) -->
+      <g stroke="#1A1412" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M-6,-8 Q-25,-25 -32,-8"/>
+        <path d="M-8,-4 Q-32,-15 -38,5"/>
+        <path d="M-8,5 Q-34,15 -34,30"/>
+        <path d="M-6,12 Q-28,32 -22,42"/>
+
+        <path d="M6,-8 Q25,-25 32,-8"/>
+        <path d="M8,-4 Q32,-15 38,5"/>
+        <path d="M8,5 Q34,15 34,30"/>
+        <path d="M6,12 Q28,32 22,42"/>
+      </g>
+    </g>
+
+    <!-- Elasticated Ribbed Bottom Hem (Bord côte élastique en bas du casque) -->
+    <path d="M-92,85 C-45,108 45,108 92,85 L88,102 C45,120 -45,120 -88,102 Z" fill="#D7C6AF" stroke="#B8A48B" stroke-width="1"/>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(20, 20)">
+    <rect width="135" height="26" rx="13" fill="#FFF7F0" opacity="0.95" stroke="#EAD8C8"/>
+    <text x="67" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#8F263B" text-anchor="middle">SACS & ACCESSOIRES</text>
+  </g>
+</svg>

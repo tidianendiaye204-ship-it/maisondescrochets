@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBooties" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F5"/>
+      <stop offset="100%" stop-color="#EFE6DD"/>
+    </linearGradient>
+    <linearGradient id="pastelPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2C8C6"/>
+      <stop offset="100%" stop-color="#D99B9A"/>
+    </linearGradient>
+    <linearGradient id="ivoryYarn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EDE2D6"/>
+    </linearGradient>
+    <linearGradient id="woodButton" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B87D4B"/>
+      <stop offset="100%" stop-color="#734720"/>
+    </linearGradient>
+    <filter id="bootieShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#38231D" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgBooties)"/>
+
+  <!-- Pair of Baby Booties -->
+  <g transform="translate(200, 240)" filter="url(#bootieShadow)">
+    <!-- Left Bootie (Vue 3/4) -->
+    <g transform="translate(-55, 10) rotate(-12)">
+      <!-- Sole (Semelle en maille serrée) -->
+      <ellipse cx="0" cy="55" rx="42" ry="22" fill="#D3C3B2"/>
+      
+      <!-- Upper Body (Pied de chausson) -->
+      <path d="M-40,48 C-45,20 -30,-5 0,-15 C30,-5 45,20 40,48 C35,62 -35,62 -40,48 Z" fill="url(#ivoryYarn)"/>
+      <path d="M-38,35 C-20,40 20,40 38,35" stroke="#CBB9A5" stroke-width="1.8" stroke-dasharray="3,3" fill="none"/>
+      
+      <!-- Ankle Cuff (Collerette cheville rose poudré) -->
+      <path d="M-30,-10 C-30,-45 0,-50 30,-10 L25,10 C0,5 -20,5 -25,10 Z" fill="url(#pastelPink)"/>
+      
+      <!-- Ankle strap with wooden button -->
+      <path d="M-28,-2 C-10,-12 15,-12 30,-2" stroke="url(#pastelPink)" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="20" cy="-6" r="5" fill="url(#woodButton)"/>
+      <circle cx="20" cy="-6" r="1.5" fill="#3D1F08"/>
+      
+      <!-- Crochet ribbing cuff detail -->
+      <line x1="-18" y1="-32" x2="-18" y2="-12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-6" y1="-38" x2="-6" y2="-14" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="6" y1="-38" x2="6" y2="-14" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="18" y1="-32" x2="18" y2="-12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Bootie (Vue 3/4 inclinée) -->
+    <g transform="translate(55, 0) rotate(14)">
+      <!-- Sole -->
+      <ellipse cx="0" cy="55" rx="42" ry="22" fill="#D3C3B2"/>
+      
+      <!-- Upper Body -->
+      <path d="M-40,48 C-45,20 -30,-5 0,-15 C30,-5 45,20 40,48 C35,62 -35,62 -40,48 Z" fill="url(#ivoryYarn)"/>
+      <path d="M-38,35 C-20,40 20,40 38,35" stroke="#CBB9A5" stroke-width="1.8" stroke-dasharray="3,3" fill="none"/>
+      
+      <!-- Ankle Cuff -->
+      <path d="M-30,-10 C-30,-45 0,-50 30,-10 L25,10 C0,5 -20,5 -25,10 Z" fill="url(#pastelPink)"/>
+      
+      <!-- Ankle strap with wooden button -->
+      <path d="M-30,-2 C-15,-12 10,-12 28,-2" stroke="url(#pastelPink)" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="-20" cy="-6" r="5" fill="url(#woodButton)"/>
+      <circle cx="-20" cy="-6" r="1.5" fill="#3D1F08"/>
+
+      <!-- Crochet ribbing cuff detail -->
+      <line x1="-18" y1="-32" x2="-18" y2="-12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="-6" y1="-38" x2="-6" y2="-14" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="6" y1="-38" x2="6" y2="-14" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="18" y1="-32" x2="18" y2="-12" stroke="#FFF" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(20, 20)">
+    <rect width="130" height="26" rx="13" fill="#FFF7F0" opacity="0.95" stroke="#EAD8C8"/>
+    <text x="65" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#8F263B" text-anchor="middle">CHAUSSURES & BÉBÉS</text>
+  </g>
+</svg>

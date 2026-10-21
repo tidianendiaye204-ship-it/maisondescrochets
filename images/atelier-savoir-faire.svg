@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAtelier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF6EE"/>
+      <stop offset="100%" stop-color="#E9DACB"/>
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F422E"/>
+      <stop offset="50%" stop-color="#552F1F"/>
+      <stop offset="100%" stop-color="#3D1D11"/>
+    </linearGradient>
+    <linearGradient id="goldHook" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3C37A"/>
+      <stop offset="50%" stop-color="#DDA24A"/>
+      <stop offset="100%" stop-color="#B17726"/>
+    </linearGradient>
+    <linearGradient id="yarnRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA2E3D"/>
+      <stop offset="100%" stop-color="#7B1722"/>
+    </linearGradient>
+    <linearGradient id="yarnCream" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#DFCFBD"/>
+    </linearGradient>
+    <filter id="atelierShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2D1C16" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgAtelier)"/>
+
+  <!-- Atelier Scene Container -->
+  <g transform="translate(300, 225)" filter="url(#atelierShadow)">
+    <!-- Wooden Tabletop / Plan de travail -->
+    <ellipse cx="0" cy="110" rx="250" ry="60" fill="#DECAB5" opacity="0.65"/>
+    <ellipse cx="0" cy="115" rx="230" ry="45" fill="#CDAE92" opacity="0.4"/>
+
+    <!-- Pelote de fil rouge à gauche -->
+    <g transform="translate(-160, 70)">
+      <circle cx="0" cy="0" r="38" fill="url(#yarnRed)"/>
+      <!-- Yarn winding curves -->
+      <path d="M-28,-15 C-5,-30 25,-10 28,15" stroke="#E55F6E" stroke-width="2.5" fill="none"/>
+      <path d="M-25,12 C-10,32 20,25 25,-10" stroke="#E55F6E" stroke-width="2.5" fill="none"/>
+      <path d="M-15,-28 C15,-20 18,20 -12,28" stroke="#E55F6E" stroke-width="2.5" fill="none"/>
+      <!-- Thread unrolling towards hands -->
+      <path d="M22,25 C60,50 90,0 125,-10" stroke="#BA2E3D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Pelote de fil écru naturel à droite -->
+    <g transform="translate(170, 80)">
+      <circle cx="0" cy="0" r="32" fill="url(#yarnCream)"/>
+      <path d="M-22,-12 C-5,-25 20,-10 22,12" stroke="#FFF" stroke-width="2" fill="none"/>
+      <path d="M-20,10 C-8,25 15,20 20,-8" stroke="#FFF" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Crochet Fabric in Progress (L'ouvrage en cours de confection) -->
+    <g transform="translate(0, 30)">
+      <path d="M-80,0 C-40,-25 40,-25 80,0 L95,65 C40,80 -40,80 -95,65 Z" fill="url(#yarnCream)" stroke="#C8B49F" stroke-width="1"/>
+      <!-- Granny square motifs inside work -->
+      <polygon points="-40,15 -15,35 -40,55 -65,35" fill="url(#yarnRed)"/>
+      <polygon points="40,15 65,35 40,55 15,35" fill="url(#yarnRed)"/>
+      <polygon points="0,0 20,18 0,36 -20,18" fill="#C87A32"/>
+      <!-- Mesh loops -->
+      <path d="M-75,15 C-40,25 40,25 75,15" stroke="#C8B49F" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+      <path d="M-85,45 C-40,60 40,60 85,45" stroke="#C8B49F" stroke-width="2" stroke-dasharray="4,4" fill="none"/>
+    </g>
+
+    <!-- Artisan Hands at Work (Mains sénégalaises maniant le crochet) -->
+    <!-- Left Hand holding the yarn & guiding loop -->
+    <g transform="translate(-75, -20) rotate(-15)">
+      <!-- Arm & wrist -->
+      <path d="M-90,-50 C-70,-45 -45,-30 -35,-15 L-20,10 C-30,22 -60,10 -90,0 Z" fill="url(#skinTone)"/>
+      <!-- Gold Bangle / Bracelet artisanal en or -->
+      <path d="M-70,-42 C-60,-28 -55,-15 -58,0" stroke="url(#goldHook)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Fingers gripping yarn -->
+      <ellipse cx="-15" cy="5" rx="14" ry="7" fill="url(#skinTone)" transform="rotate(25 -15 5)"/>
+      <ellipse cx="-5" cy="0" rx="14" ry="6.5" fill="url(#skinTone)" transform="rotate(10 -5 0)"/>
+      <ellipse cx="2" cy="-8" rx="15" ry="6" fill="url(#skinTone)" transform="rotate(-5 2 -8)"/>
+      <!-- Yarn tension over index finger -->
+      <path d="M-28,30 C-10,10 5,0 35,-12" stroke="#BA2E3D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Hand with golden crochet hook catching loop -->
+    <g transform="translate(65, -20) rotate(10)">
+      <!-- Arm & wrist -->
+      <path d="M90,-50 C70,-45 45,-30 35,-15 L20,10 C30,22 60,10 90,0 Z" fill="url(#skinTone)"/>
+      <!-- Gold Bangle -->
+      <path d="M70,-42 C60,-28 55,-15 58,0" stroke="url(#goldHook)" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Fingers holding hook like a pencil -->
+      <ellipse cx="12" cy="5" rx="14" ry="7" fill="url(#skinTone)" transform="rotate(-20 12 5)"/>
+      <ellipse cx="2" cy="-4" rx="14" ry="6.5" fill="url(#skinTone)" transform="rotate(-10 2 -4)"/>
+      
+      <!-- Golden Crochet Hook (Crochet doré) -->
+      <line x1="25" y1="20" x2="-65" y2="-15" stroke="url(#goldHook)" stroke-width="5" stroke-linecap="round"/>
+      <!-- Hook tip forming a stitch -->
+      <path d="M-65,-15 C-72,-18 -74,-12 -68,-8 C-64,-6 -62,-10 -65,-15" stroke="url(#goldHook)" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+      <!-- Active stitch loop on hook -->
+      <ellipse cx="-52" cy="-10" rx="6" ry="3" fill="none" stroke="#BA2E3D" stroke-width="3" transform="rotate(25 -52 -10)"/>
+    </g>
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="32" rx="16" fill="#FFF7F0" opacity="0.95" stroke="#EAD8C8"/>
+    <text x="90" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#8F263B" text-anchor="middle">ATELIER ARTISANAL • DAKAR</text>
+  </g>
+</svg>

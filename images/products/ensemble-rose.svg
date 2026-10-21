@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCF8F7"/>
+      <stop offset="100%" stop-color="#EFE0DC"/>
+    </linearGradient>
+    <linearGradient id="vibrantRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C22035"/>
+      <stop offset="50%" stop-color="#A51427"/>
+      <stop offset="100%" stop-color="#800D1C"/>
+    </linearGradient>
+    <linearGradient id="powderPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C4CB"/>
+      <stop offset="50%" stop-color="#E59FA9"/>
+      <stop offset="100%" stop-color="#CE7D89"/>
+    </linearGradient>
+    <filter id="setShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#38231D" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgSet)"/>
+
+  <!-- Top with Criss-Cross Straps (Haut rouge & rose bretelles croisées) -->
+  <g transform="translate(200, 145)" filter="url(#setShadow)">
+    <!-- Criss-cross neck straps -->
+    <path d="M-45,-65 L35,-15" stroke="url(#vibrantRed)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M45,-65 L-35,-15" stroke="url(#powderPink)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Two-tone bra/crop top (Bicolore rouge vif et rose) -->
+    <!-- Left cup (Pink) -->
+    <path d="M-55,-15 C-55,-40 -20,-40 0,-15 L-5,35 C-25,38 -45,35 -55,20 Z" fill="url(#powderPink)"/>
+    <!-- Right cup (Red) -->
+    <path d="M55,-15 C55,-40 20,-40 0,-15 L5,35 C25,38 45,35 55,20 Z" fill="url(#vibrantRed)"/>
+
+    <!-- Contrast Underbust Band (Bande ajourée sous poitrine) -->
+    <path d="M-52,28 C-25,35 25,35 52,28 L50,45 C25,50 -25,50 -50,45 Z" fill="url(#vibrantRed)"/>
+    <line x1="-45" y1="38" x2="45" y2="38" stroke="url(#powderPink)" stroke-width="1.8" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Matching Mini Skirt (Jupe courte assortie) -->
+  <g transform="translate(200, 310)" filter="url(#setShadow)">
+    <!-- Waistband with pink tie -->
+    <rect x="-55" y="-35" width="110" height="14" rx="4" fill="url(#vibrantRed)"/>
+    <circle cx="0" cy="-28" r="4" fill="url(#powderPink)"/>
+    <path d="M0,-24 C-6,-5 -10,12 -12,25 M0,-24 C6,-5 10,12 12,25" stroke="url(#powderPink)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Alternating Red & Pink Horizontal Crochet Panels -->
+    <!-- Panel 1 (Pink) -->
+    <path d="M-55,-21 L-62,10 L62,10 L55,-21 Z" fill="url(#powderPink)"/>
+    <!-- Panel 2 (Red Chevron) -->
+    <path d="M-62,10 L-70,42 L70,42 L62,10 Z" fill="url(#vibrantRed)"/>
+    <path d="M-60,26 L-45,18 L-30,26 L-15,18 L0,26 L15,18 L30,26 L45,18 L60,26" stroke="#FFF" stroke-width="1.6" fill="none"/>
+
+    <!-- Panel 3 (Pink Flared Base) -->
+    <path d="M-70,42 L-78,75 C-30,85 30,85 78,75 L70,42 Z" fill="url(#powderPink)"/>
+
+    <!-- Scalloped Hem (Festons bas de jupe rouge) -->
+    <path d="M-78,75 
+             Q-65,82 -52,78 Q-39,84 -26,80 Q-13,85 0,81 Q13,85 26,80 Q39,84 52,78 Q65,82 78,75
+             C30,90 -30,90 -78,75" fill="url(#vibrantRed)"/>
+  </g>
+
+  <!-- Category Tag -->
+  <g transform="translate(20, 20)">
+    <rect width="95" height="26" rx="13" fill="#FFF7F0" opacity="0.95" stroke="#EAD8C8"/>
+    <text x="47" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#8F263B" text-anchor="middle">ENSEMBLES</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLinen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F2E8DC"/>
+    </linearGradient>
+    <linearGradient id="redYarn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B22234"/>
+      <stop offset="50%" stop-color="#8F1D2C"/>
+      <stop offset="100%" stop-color="#6B1420"/>
+    </linearGradient>
+    <linearGradient id="creamYarn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EFE5D8"/>
+    </linearGradient>
+    <pattern id="stitchPattern" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M2,6 C4,2 8,2 10,6 C8,10 4,10 2,6" stroke="#FFFFFF" stroke-width="0.8" fill="none" opacity="0.45"/>
+    </pattern>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#38231D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgLinen)"/>
+
+  <!-- Floral Headband (Bandeau assorti) -->
+  <g transform="translate(200, 75)" filter="url(#softShadow)">
+    <!-- Band -->
+    <path d="M-85,0 C-40,-8 40,-8 85,0 C40,8 -40,8 -85,0" fill="url(#creamYarn)" stroke="#D8C7B5" stroke-width="1"/>
+    <path d="M-85,0 C-40,-8 40,-8 85,0 C40,8 -40,8 -85,0" fill="url(#stitchPattern)"/>
+    <!-- Central Flower -->
+    <circle cx="0" cy="0" r="14" fill="url(#redYarn)"/>
+    <!-- Petals -->
+    <circle cx="0" cy="-12" r="7" fill="url(#creamYarn)"/>
+    <circle cx="11" cy="-4" r="7" fill="url(#creamYarn)"/>
+    <circle cx="7" cy="10" r="7" fill="url(#creamYarn)"/>
+    <circle cx="-7" cy="10" r="7" fill="url(#creamYarn)"/>
+    <circle cx="-11" cy="-4" r="7" fill="url(#creamYarn)"/>
+    <circle cx="0" cy="0" r="4" fill="#D4A373"/>
+  </g>
+
+  <!-- Baby Dress Body -->
+  <g transform="translate(200, 255)" filter="url(#softShadow)">
+    <!-- Straps -->
+    <path d="M-45,-125 L-35,-85 L-25,-85 L-35,-125 Z" fill="url(#creamYarn)" stroke="#D8C7B5" stroke-width="0.5"/>
+    <path d="M45,-125 L35,-85 L25,-85 L35,-125 Z" fill="url(#creamYarn)" stroke="#D8C7B5" stroke-width="0.5"/>
+    
+    <!-- Bodice (Haut rouge) -->
+    <path d="M-50,-85 C-25,-90 25,-90 50,-85 L42,-30 C20,-28 -20,-28 -42,-30 Z" fill="url(#redYarn)"/>
+    <path d="M-50,-85 C-25,-90 25,-90 50,-85 L42,-30 C20,-28 -20,-28 -42,-30 Z" fill="url(#stitchPattern)"/>
+
+    <!-- Decorative flower on bodice chest -->
+    <circle cx="-15" cy="-60" r="9" fill="url(#creamYarn)"/>
+    <circle cx="-15" cy="-60" r="3" fill="#D4A373"/>
+
+    <!-- Waist ribbon in crochet lace -->
+    <path d="M-44,-30 C-20,-28 20,-28 44,-30 L45,-20 C20,-18 -20,-18 -45,-20 Z" fill="url(#creamYarn)"/>
+
+    <!-- Flared Skirt (Jupe évasée blanche avec festons rouges) -->
+    <path d="M-45,-20 Q-95,80 -105,140 C-35,155 35,155 105,140 Q95,80 45,-20 Z" fill="url(#creamYarn)"/>
+    <path d="M-45,-20 Q-95,80 -105,140 C-35,155 35,155 105,140 Q95,80 45,-20 Z" fill="url(#stitchPattern)"/>
+
+    <!-- Red scallop crochet hem (Festons bas de robe) -->
+    <path d="M-105,140 
+             Q-90,146 -75,142 Q-60,148 -45,145 Q-30,150 -15,148 Q0,152 15,148 Q30,150 45,145 Q60,148 75,142 Q90,146 105,140
+             C35,158 -35,158 -105,140" fill="url(#redYarn)"/>
+
+    <!-- Crochet vertical openwork stripes on skirt -->
+    <path d="M-25,-15 Q-55,75 -65,135" stroke="#E2D4C3" stroke-width="1.8" stroke-dasharray="3,3" fill="none"/>
+    <path d="M0,-15 Q0,75 0,142" stroke="#E2D4C3" stroke-width="1.8" stroke-dasharray="3,3" fill="none"/>
+    <path d="M25,-15 Q55,75 65,135" stroke="#E2D4C3" stroke-width="1.8" stroke-dasharray="3,3" fill="none"/>
+  </g>
+
+  <!-- Boutique Label Overlay -->
+  <g transform="translate(20, 20)">
+    <rect width="110" height="26" rx="13" fill="#FFF7F0" opacity="0.95" stroke="#EAD8C8"/>
+    <text x="55" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#8F263B" text-anchor="middle">BÉBÉS & ENFANTS</text>
+  </g>
+</svg>
